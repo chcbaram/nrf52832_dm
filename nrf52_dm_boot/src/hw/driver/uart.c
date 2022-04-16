@@ -276,7 +276,7 @@ uint32_t uartGetBaud(uint8_t ch)
 
 void UARTE0_UART0_IRQHandler(void)
 {
-  uart_tbl_t *p_uart = &uart_tbl[_DEF_UART2];
+  uart_tbl_t *p_uart = &uart_tbl[_DEF_UART1];
 
 
   if (NRF_UARTE0->EVENTS_ENDRX > 0)
