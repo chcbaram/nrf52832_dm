@@ -2,7 +2,7 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR ARM)
 
 set(ARM_TOOLCHAIN_DIR "D:/tools/gcc-arm-none-eabi-10-2020-q4-major")
-set(CMAKE_MAKE_PROGRAM "D:/tools/build_tools/xpack-windows-build-tools-4.2.1-2/bin/make.exe" CACHE FILEPATH "" FORCE)
+set(CMAKE_MAKE_PROGRAM "D:/tools/build_tools/xpack-windows-build-tools-4.3.0-1/bin/make.exe" CACHE FILEPATH "" FORCE)
 
 set(BINUTILS_PATH ${ARM_TOOLCHAIN_DIR})
 
