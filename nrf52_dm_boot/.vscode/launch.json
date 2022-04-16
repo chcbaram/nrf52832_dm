@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "cwd": "${workspaceRoot}",
+      "executable": "./build/nrf52_dm_boot.elf",
+      "name": "Debug with OpenOCD",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/nrf52.cfg"
+      ],
+      "searchDir": ["${workspaceRoot}"],
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "none",
+      
+      "windows": {
+        "toolchainPath": "D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/bin",
+        "serverpath": "D:/tools/build_tools/xpack-openocd-0.11.0-1/bin/openocd.exe"
+      }
+    },
+  ]
+}
