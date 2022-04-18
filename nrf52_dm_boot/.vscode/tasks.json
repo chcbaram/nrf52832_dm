@@ -1,0 +1,22 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "configure",
+      "type": "shell",
+      "command": "cmake -S . -B build -G 'MinGW Makefiles' "
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "cmake --build build --target clean"
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "cmake --build build -j4"
+    }
+  ]
+}
