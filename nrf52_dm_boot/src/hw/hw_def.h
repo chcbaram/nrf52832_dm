@@ -31,7 +31,7 @@
 #define      HW_CLI_LINE_BUF_MAX    64
 
 #define _USE_HW_LOG
-#define      HW_LOG_CH              _DEF_UART2
+#define      HW_LOG_CH              _DEF_UART1
 
 #define _USE_HW_SWTIMER
 #define      HW_SWTIMER_MAX_CH      8

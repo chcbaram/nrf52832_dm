@@ -80,8 +80,8 @@ bool uartOpen(uint8_t ch, uint32_t baud)
       NRF_UARTE0->TASKS_STARTRX = 1;
 
 
-      NVIC_SetPriority(TIMER1_IRQn, 6);
-      NVIC_EnableIRQ(TIMER1_IRQn);
+      NVIC_SetPriority(UARTE0_UART0_IRQn, 6);
+      NVIC_EnableIRQ(UARTE0_UART0_IRQn);
 
       uart_tbl[ch].is_open = true;
       ret = true;
